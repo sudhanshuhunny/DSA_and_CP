@@ -1,1 +1,0 @@
-Hi Guys this is my day 1 at dsa with cp now I'm revising all the Git and github and learned some things like git stash and etc
