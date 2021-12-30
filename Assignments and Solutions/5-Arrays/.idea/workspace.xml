@@ -2,33 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="be06dc5e-a51c-433e-886a-b48258371811" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/../1-Flow_Of_Program/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../1-Flow_Of_Program/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../1-Flow_Of_Program/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../1-Flow_Of_Program/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../1-Flow_Of_Program/1-Flow_Of_Program.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../2-First_JAVA_Program/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../2-First_JAVA_Program/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../2-First_JAVA_Program/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../2-First_JAVA_Program/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../2-First_JAVA_Program/2-First_JAVA_Program.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../3-Loops &amp; Conditional Statement/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../3-Loops &amp; Conditional Statement/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../3-Loops &amp; Conditional Statement/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../3-Loops &amp; Conditional Statement/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../3-Loops &amp; Conditional Statement/3-Loops &amp; Conditional Statement.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../4-Functions/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../4-Functions/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../4-Functions/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../4-Functions/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../4-Functions/4-Functions.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/5-Arrays.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Build_Array_from_permutation.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Concatenation_of_array.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Build_Array_from_permutation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Build_Array_from_permutation.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -44,6 +20,14 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="GithubPullRequestsUISettings">
+    <option name="selectedUrlAndAccountId">
+      <UrlAndAccount>
+        <option name="accountId" value="dc5174ad-84dd-4206-a072-3c4992d12bf2" />
+        <option name="url" value="https://github.com/sudhanshuhunny/DSA_and_CP.git" />
+      </UrlAndAccount>
+    </option>
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
