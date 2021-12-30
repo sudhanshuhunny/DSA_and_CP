@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="2ce88c51-f39b-412d-894f-c318fb203d03" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../1-Flow_Of_Program/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../1-Flow_Of_Program/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../1-Flow_Of_Program/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../1-Flow_Of_Program/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../1-Flow_Of_Program/1-Flow_Of_Program.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/2-First_JAVA_Program.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../3-Loops &amp; Conditional Statement/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../3-Loops &amp; Conditional Statement/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../3-Loops &amp; Conditional Statement/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../3-Loops &amp; Conditional Statement/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../3-Loops &amp; Conditional Statement/3-Loops &amp; Conditional Statement.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../4-Functions/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../4-Functions/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../4-Functions/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../4-Functions/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../4-Functions/4-Functions.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../5-Arrays/Build_Array_from_permutations.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../.idea/misc.xml" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="ProjectId" id="22xTW6crV6JYhzUGgaBR025tMnZ" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="2ce88c51-f39b-412d-894f-c318fb203d03" name="Changes" comment="" />
+      <created>1640778268822</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1640778268822</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+  </component>
+</project>
