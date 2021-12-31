@@ -1,110 +1,112 @@
+import java.util.ArrayList;
+import java.util.*;
 public class Solution {
-/*
-1920. Build Array from Permutation
-Easy
+    /*
+    1920. Build Array from Permutation
+    Easy
 
-734
+    734
 
-95
+    95
 
-Add to List
+    Add to List
 
-Share
-Given a zero-based permutation nums (0-indexed), build an array ans of the same length where ans[i] = nums[nums[i]] for each 0 <= i < nums.length and return it.
+    Share
+    Given a zero-based permutation nums (0-indexed), build an array ans of the same length where ans[i] = nums[nums[i]] for each 0 <= i < nums.length and return it.
 
-A zero-based permutation nums is an array of distinct integers from 0 to nums.length - 1 (inclusive).
-
-
-
-Example 1:
-
-Input: nums = [0,2,1,5,3,4]
-Output: [0,1,2,4,5,3]
-Explanation: The array ans is built as follows:
-ans = [nums[nums[0]], nums[nums[1]], nums[nums[2]], nums[nums[3]], nums[nums[4]], nums[nums[5]]]
-    = [nums[0], nums[2], nums[1], nums[5], nums[3], nums[4]]
-    = [0,1,2,4,5,3]
-Example 2:
-
-Input: nums = [5,0,1,2,3,4]
-Output: [4,5,0,1,2,3]
-Explanation: The array ans is built as follows:
-ans = [nums[nums[0]], nums[nums[1]], nums[nums[2]], nums[nums[3]], nums[nums[4]], nums[nums[5]]]
-    = [nums[5], nums[0], nums[1], nums[2], nums[3], nums[4]]
-    = [4,5,0,1,2,3]
+    A zero-based permutation nums is an array of distinct integers from 0 to nums.length - 1 (inclusive).
 
 
-Constraints:
 
-1 <= nums.length <= 1000
-0 <= nums[i] < nums.length
-The elements in nums are distinct.
+    Example 1:
+
+    Input: nums = [0,2,1,5,3,4]
+    Output: [0,1,2,4,5,3]
+    Explanation: The array ans is built as follows:
+    ans = [nums[nums[0]], nums[nums[1]], nums[nums[2]], nums[nums[3]], nums[nums[4]], nums[nums[5]]]
+        = [nums[0], nums[2], nums[1], nums[5], nums[3], nums[4]]
+        = [0,1,2,4,5,3]
+    Example 2:
+
+    Input: nums = [5,0,1,2,3,4]
+    Output: [4,5,0,1,2,3]
+    Explanation: The array ans is built as follows:
+    ans = [nums[nums[0]], nums[nums[1]], nums[nums[2]], nums[nums[3]], nums[nums[4]], nums[nums[5]]]
+        = [nums[5], nums[0], nums[1], nums[2], nums[3], nums[4]]
+        = [4,5,0,1,2,3]
 
 
-Follow-up: Can you solve it without using an extra space (i.e., O(1) memory)?
- */
-public int[] buildArray(int[] nums) {
+    Constraints:
 
-    int size=nums.length;
-    int[] ans =new int[size];
-    for(int i=0;i<ans.length;i++)
-    {
-        ans[i]=nums[nums[i]];
+    1 <= nums.length <= 1000
+    0 <= nums[i] < nums.length
+    The elements in nums are distinct.
+
+
+    Follow-up: Can you solve it without using an extra space (i.e., O(1) memory)?
+     */
+    public int[] buildArray(int[] nums) {
+
+        int size = nums.length;
+        int[] ans = new int[size];
+        for (int i = 0; i < ans.length; i++) {
+            ans[i] = nums[nums[i]];
+        }
+        return ans;
     }
-    return ans;
-}
-/*
-1929. Concatenation of Array
-Easy
 
-585
+    /*
+    1929. Concatenation of Array
+    Easy
 
-145
+    585
 
-Add to List
+    145
 
-Share
-Given an integer array nums of length n, you want to create an array ans of length 2n where ans[i] == nums[i] and ans[i + n] == nums[i] for 0 <= i < n (0-indexed).
+    Add to List
 
-Specifically, ans is the concatenation of two nums arrays.
+    Share
+    Given an integer array nums of length n, you want to create an array ans of length 2n where ans[i] == nums[i] and ans[i + n] == nums[i] for 0 <= i < n (0-indexed).
 
-Return the array ans.
+    Specifically, ans is the concatenation of two nums arrays.
 
+    Return the array ans.
 
 
-Example 1:
 
-Input: nums = [1,2,1]
-Output: [1,2,1,1,2,1]
-Explanation: The array ans is formed as follows:
-- ans = [nums[0],nums[1],nums[2],nums[0],nums[1],nums[2]]
-- ans = [1,2,1,1,2,1]
-Example 2:
+    Example 1:
 
-Input: nums = [1,3,2,1]
-Output: [1,3,2,1,1,3,2,1]
-Explanation: The array ans is formed as follows:
-- ans = [nums[0],nums[1],nums[2],nums[3],nums[0],nums[1],nums[2],nums[3]]
-- ans = [1,3,2,1,1,3,2,1]
+    Input: nums = [1,2,1]
+    Output: [1,2,1,1,2,1]
+    Explanation: The array ans is formed as follows:
+    - ans = [nums[0],nums[1],nums[2],nums[0],nums[1],nums[2]]
+    - ans = [1,2,1,1,2,1]
+    Example 2:
+
+    Input: nums = [1,3,2,1]
+    Output: [1,3,2,1,1,3,2,1]
+    Explanation: The array ans is formed as follows:
+    - ans = [nums[0],nums[1],nums[2],nums[3],nums[0],nums[1],nums[2],nums[3]]
+    - ans = [1,3,2,1,1,3,2,1]
 
 
-Constraints:
+    Constraints:
 
-n == nums.length
-1 <= n <= 1000
-1 <= nums[i] <= 1000
- */
-public int[] getConcatenation(int[] nums) {
-    int size=nums.length*2;
-    int[] ans=new int[size];
-    int k = nums.length;
-    for(int i=0;i<nums.length;i++){
-        ans[i]=nums[i];
-        ans[k]=nums[i];
-        k++;
+    n == nums.length
+    1 <= n <= 1000
+    1 <= nums[i] <= 1000
+     */
+    public int[] getConcatenation(int[] nums) {
+        int size = nums.length * 2;
+        int[] ans = new int[size];
+        int k = nums.length;
+        for (int i = 0; i < nums.length; i++) {
+            ans[i] = nums[i];
+            ans[k] = nums[i];
+            k++;
+        }
+        return ans;
     }
-    return ans;
-}
 
     /*/
 1365. How Many Numbers Are Smaller Than the Current Number
@@ -147,17 +149,17 @@ Output: [0,0,0,0]
  */
 
     public int[] smallerNumbersThanCurrent(int[] nums) {
-        int[] ans=new int[nums.length];
+        int[] ans = new int[nums.length];
 
-        for(int i=0;i<nums.length;i++){
-            int count=0;
-            for(int j=0;j<nums.length;j++){
-                if(nums[j]<nums[i]){ // All numbers smaller that particular number
+        for (int i = 0; i < nums.length; i++) {
+            int count = 0;
+            for (int j = 0; j < nums.length; j++) {
+                if (nums[j] < nums[i]) { // All numbers smaller that particular number
                     count++;
                 }
 
             }
-            ans[i]=count;
+            ans[i] = count;
         }
         return ans;
     }
@@ -205,16 +207,16 @@ nums.length == 2n
 
 
     public int[] shuffle(int[] nums, int n) {
-        int[] ans=new int[nums.length];
-        int k=0;
-        for(int i=0;i<n;i++){
-            ans[k]=nums[i];
-            k+=2;
+        int[] ans = new int[nums.length];
+        int k = 0;
+        for (int i = 0; i < n; i++) {
+            ans[k] = nums[i];
+            k += 2;
         }
-        int m=1;
-        for(int j=n;j<nums.length;j++){
-            ans[m]=nums[j];
-            m+=2;
+        int m = 1;
+        for (int j = n; j < nums.length; j++) {
+            ans[m] = nums[j];
+            m += 2;
         }
         return ans;
     }
@@ -258,67 +260,67 @@ Constraints:
  */
 
 
-        public int[] runningSum(int[] nums) {
-            int[] ans=new int[nums.length];
-            int sum=0;
-            for(int i=0;i<nums.length;i++){
-                sum+=nums[i];
-                ans[i]=sum;
+    public int[] runningSum(int[] nums) {
+        int[] ans = new int[nums.length];
+        int sum = 0;
+        for (int i = 0; i < nums.length; i++) {
+            sum += nums[i];
+            ans[i] = sum;
 
-            }
-            return ans;
         }
-
-/*
-1512. Number of Good Pairs
-Easy
-
-1950
-
-127
-
-Add to List
-
-Share
-Given an array of integers nums, return the number of good pairs.
-
-A pair (i, j) is called good if nums[i] == nums[j] and i < j.
-
-
-
-Example 1:
-
-Input: nums = [1,2,3,1,1,3]
-Output: 4
-Explanation: There are 4 good pairs (0,3), (0,4), (3,4), (2,5) 0-indexed.
-Example 2:
-
-Input: nums = [1,1,1,1]
-Output: 6
-Explanation: Each pair in the array are good.
-Example 3:
-
-Input: nums = [1,2,3]
-Output: 0
-
-
-Constraints:
-
-1 <= nums.length <= 100
-1 <= nums[i] <= 100
- */
-public int numIdenticalPairs(int[] nums) {
-    int[] ans=new int[nums.length];
-    int count=0;
-    for(int i=0;i<nums.length;i++){
-        for(int j=0;j<nums.length;j++){
-            if(nums[i]==nums[j] && i<j){
-                count++;
-            }
-        }
+        return ans;
     }
-    return count;
-}
+
+    /*
+    1512. Number of Good Pairs
+    Easy
+
+    1950
+
+    127
+
+    Add to List
+
+    Share
+    Given an array of integers nums, return the number of good pairs.
+
+    A pair (i, j) is called good if nums[i] == nums[j] and i < j.
+
+
+
+    Example 1:
+
+    Input: nums = [1,2,3,1,1,3]
+    Output: 4
+    Explanation: There are 4 good pairs (0,3), (0,4), (3,4), (2,5) 0-indexed.
+    Example 2:
+
+    Input: nums = [1,1,1,1]
+    Output: 6
+    Explanation: Each pair in the array are good.
+    Example 3:
+
+    Input: nums = [1,2,3]
+    Output: 0
+
+
+    Constraints:
+
+    1 <= nums.length <= 100
+    1 <= nums[i] <= 100
+     */
+    public int numIdenticalPairs(int[] nums) {
+        int[] ans = new int[nums.length];
+        int count = 0;
+        for (int i = 0; i < nums.length; i++) {
+            for (int j = 0; j < nums.length; j++) {
+                if (nums[i] == nums[j] && i < j) {
+                    count++;
+                }
+            }
+        }
+        return count;
+    }
 
 /*
 1672. Richest Customer Wealth
@@ -370,20 +372,88 @@ n == accounts[i].length
 
     public int maximumWealth(int[][] accounts) {
 
-        int[] ar=new int[accounts.length];
-        for(int row=0;row<accounts.length;row++){
-            int sum=0;
-            for(int col=0;col<accounts[row].length;col++){
-                sum+=accounts[row][col];
+        int[] ar = new int[accounts.length];
+        for (int row = 0; row < accounts.length; row++) {
+            int sum = 0;
+            for (int col = 0; col < accounts[row].length; col++) {
+                sum += accounts[row][col];
             }
-            ar[row]=sum;
+            ar[row] = sum;
         }
-        int max=ar[0];
-        for(int n : ar){
-            if(n>max){
-                max=n;
+        int max = ar[0];
+        for (int n : ar) {
+            if (n > max) {
+                max = n;
             }
         }
         return max;
+    }
+
+/*
+1431. Kids With the Greatest Number of Candies
+Easy
+
+1260
+
+241
+
+Add to List
+
+Share
+There are n kids with candies. You are given an integer array candies, where each candies[i] represents the number of candies the ith kid has, and an integer extraCandies, denoting the number of extra candies that you have.
+
+Return a boolean array result of length n, where result[i] is true if, after giving the ith kid all the extraCandies, they will have the greatest number of candies among all the kids, or false otherwise.
+
+Note that multiple kids can have the greatest number of candies.
+
+
+
+Example 1:
+
+Input: candies = [2,3,5,1,3], extraCandies = 3
+Output: [true,true,true,false,true]
+Explanation: If you give all extraCandies to:
+- Kid 1, they will have 2 + 3 = 5 candies, which is the greatest among the kids.
+- Kid 2, they will have 3 + 3 = 6 candies, which is the greatest among the kids.
+- Kid 3, they will have 5 + 3 = 8 candies, which is the greatest among the kids.
+- Kid 4, they will have 1 + 3 = 4 candies, which is not the greatest among the kids.
+- Kid 5, they will have 3 + 3 = 6 candies, which is the greatest among the kids.
+Example 2:
+
+Input: candies = [4,2,1,1,2], extraCandies = 1
+Output: [true,false,false,false,false]
+Explanation: There is only 1 extra candy.
+Kid 1 will always have the greatest number of candies, even if a different kid is given the extra candy.
+Example 3:
+
+Input: candies = [12,1,12], extraCandies = 10
+Output: [true,false,true]
+
+
+Constraints:
+
+n == candies.length
+2 <= n <= 100
+1 <= candies[i] <= 100
+1 <= extraCandies <= 50
+ */
+
+    public List<Boolean> kidsWithCandies(int[] candies, int extraCandies) {
+        int max = 0;
+        ArrayList<Boolean> Ar = new ArrayList<Boolean>();
+        for (int n : candies) {
+            if (n > max) {
+                max = n;
+            }
+        }
+        for (int i = 0; i < candies.length; i++) {
+            int credits = candies[i] + extraCandies;
+            if (credits >= max) {
+                Ar.add(true);
+            } else {
+                Ar.add(false);
+            }
+        }
+        return(Ar);
     }
 }
