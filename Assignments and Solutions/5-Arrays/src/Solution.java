@@ -915,4 +915,63 @@ n == mat[i].length
         return ans;
 
     }
+
+/*
+41. First Missing Positive
+Hard
+
+8046
+
+1209
+
+Add to List
+
+Share
+Given an unsorted integer array nums, return the smallest missing positive integer.
+
+You must implement an algorithm that runs in O(n) time and uses constant extra space.
+
+
+
+Example 1:
+
+Input: nums = [1,2,0]
+Output: 3
+Example 2:
+
+Input: nums = [3,4,-1,1]
+Output: 2
+Example 3:
+
+Input: nums = [7,8,9,11,12]
+Output: 1
+ */
+public int firstMissingPositive(int[] nums) {
+    int size= nums.length;
+
+    for (int i = 0; i < size; i++) {
+        if (nums[i] <= 0 || nums[i] > size) {
+            nums[i] = size + 1;
+        }
+    }
+
+    for (int i = 0; i < size; i++) {
+        int x = Math.abs(nums[i]);
+        if (x > size) {
+            continue;
+        }
+        x--;
+        if (nums[x] > 0)
+        {
+            nums[x] = -1 * nums[x];
+        }
+    }
+
+    for (int i = 0; i < size; i++) {
+        if (nums[i] >= 0) {
+            return i + 1;
+        }
+    }
+    return size + 1;
+}
 }
