@@ -1254,5 +1254,48 @@ Follow up: If you have figured out the O(n) solution, try coding another solutio
             }
             return max;
         }
+/*
+67. Add Binary
+Easy
 
+4315
+
+483
+
+Add to List
+
+Share
+Given two binary strings a and b, return their sum as a binary string.
+
+
+
+Example 1:
+
+Input: a = "11", b = "1"
+Output: "100"
+Example 2:
+
+Input: a = "1010", b = "1011"
+Output: "10101"
+
+
+Constraints:
+
+1 <= a.length, b.length <= 104
+a and b consist only of '0' or '1' characters.
+Each string does not contain leading zeros except for the zero itself.
+ */
+    public String addBinary(String a, String b) {
+        StringBuilder ans = new StringBuilder();
+        int i = a.length() - 1, j = b.length() -1, carry = 0;
+        while (i >= 0 || j >= 0) {
+            int sum = carry;
+            if (j >= 0) sum += b.charAt(j--) - '0';
+            if (i >= 0) sum += a.charAt(i--) - '0';
+            ans.append(sum % 2);
+            carry = sum / 2;
+        }
+        if (carry != 0) ans.append(carry);
+        return ans.reverse().toString();
+    }
 }
