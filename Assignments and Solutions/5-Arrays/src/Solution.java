@@ -1546,4 +1546,12 @@ public int[] productExceptSelf(int[] nums) {
     }
     return ans;
 }
+    public int[][] flipAndInvertImage(int[][] image) {
+        int size = image.length;
+        for (int[] row : image)
+            for (int i = 0; i * 2 < size; i++)
+                if (row[i] == row[size - i - 1])
+                    row[i] = row[size - i - 1] ^= 1;
+        return image;
+    }
 }
