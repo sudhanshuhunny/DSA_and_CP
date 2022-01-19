@@ -1575,7 +1575,7 @@ public int[] productExceptSelf(int[] nums) {
                 matrix[i][0] = 0;
         }
     }
-class Solution {
+
     public boolean isGoodArray(int[] nums) {
         int x = nums[0], y;
         for (int a: nums) {
@@ -1587,5 +1587,5 @@ class Solution {
         }
         return x == 1;
     }
-}
+
 }
