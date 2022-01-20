@@ -1612,4 +1612,21 @@ public int[] productExceptSelf(int[] nums) {
         return ans;
 
     }
+    public int maximumPopulation(int[][] logs) {
+        int[] ans = new int[101];
+        for(int[] n : logs){
+            for(int i = n[0]; i < n[1]; i++){
+                ans[i - 1950]++;
+            }
+        }
+        int max = 0;
+        int year = -1;
+        for(int i = 0; i < 101; i++){
+            if(ans[i] > max){
+                max = ans[i];
+                year = i + 1950;
+            }
+        }
+        return year;
+    }
 }
