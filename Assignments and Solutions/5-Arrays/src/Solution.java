@@ -1686,4 +1686,18 @@ xi form a strictly increasing sequence.
         return max;
     }
 }
+public boolean checkIfPangram(String sentence) {
+        boolean[] ans  = new boolean[26];
+
+        for(char c : sentence.toCharArray()) {
+        ans[c - 'a'] = true;
+        }
+
+        //find any letter that not exist
+        for(boolean existLetter : ans) {
+        if(!existLetter) return false;
+        }
+
+        return true;
+        }
 }
