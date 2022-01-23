@@ -1685,7 +1685,7 @@ xi form a strictly increasing sequence.
         }
         return max;
     }
-}
+
 public boolean checkIfPangram(String sentence) {
         boolean[] ans  = new boolean[26];
 
