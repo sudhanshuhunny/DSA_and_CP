@@ -2150,4 +2150,15 @@ Accepted
 Submissions
 
  */
+public int diagonalSfum(int[][] mat) {
+    int res = 0;
+    int size  = mat.length;
+    for (int i=0; i<size ; i++) {
+        res += mat[i][i];
+        res += mat[size-1-i][i];
+    }
+
+    return size % 2 == 0 ? res : res - mat[size/2][size/2];
+
+}
 }
